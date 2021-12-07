@@ -1,0 +1,766 @@
+*{
+    
+    font-family: 'Open Sans', sans-serif;
+    /* overflow: hidden; */
+}
+
+#logo-icon{
+    color: #FFF;
+    font-size: 2em;
+    animation-name: logo-animation;
+    animation-duration: 2s;
+    
+}
+#navHeader{
+    transition: all 2s ease;    
+}
+.nav-color-change{
+    background-color: white !important;
+}
+.nav-color-change a{
+    color:black !important;
+}
+.scrolling-active{
+    background-color: #FFF !important;
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
+    height: 9%;
+    transition: all 2s ease;    
+}
+.scrolling-active .navbar-toggler{
+    background-color: #313131 !important;
+    color: #fff !important;
+}
+.scrolling-active nav{
+    height: 5.5rem !important;
+}
+.scrolling-active nav a{
+    color: #313131 !important;
+}
+.scrolling-active nav i{
+    color: #313131
+}
+.scrolling-active {
+    background-color: white;
+    border-radius: 5px !important;
+}
+@keyframes logo-animation {
+    0%{position: absolute; font-size: 20em; top: 100%; left: 250%;}
+    5%{position: absolute; font-size: 19em; top: 95%; left: 237.5%;}
+    10%{position: absolute; font-size: 18em; top: 90%; left: 225%;}
+    15%{position: absolute; font-size: 17em; top: 85%; left: 212.5%;}
+    20%{position: absolute; font-size: 16em; top: 80%; left: 200%;}
+    25%{position: absolute; font-size: 15em; top: 75%; left: 187.5%;}
+    30%{position: absolute; font-size: 14em; top: 70%; left: 175%;}
+    35%{position: absolute; font-size: 13em; top: 65%; left: 162.5%;}
+    40%{position: absolute; font-size: 12em; top: 60%; left: 150%;}
+    45%{position: absolute; font-size: 11em; top: 55%; left: 137.5%;}
+    50%{position: absolute; font-size: 10em; top: 50%; left: 125%;}
+    55%{position: absolute; font-size: 9em; top: 45%; left: 112.5%;}
+    60%{position: absolute; font-size: 8em; top: 40%; left: 100%;}
+    65%{position: absolute; font-size: 7em; top: 35%; left: 87.5%;}
+    70%{position: absolute; font-size: 6em; top: 30%; left: 75%;}
+    75%{position: absolute; font-size: 5em; top: 25%; left: 62.5%;}
+    80%{position: absolute; font-size: 4em; top: 20%; left: 50%;} 
+    85%{position: absolute; font-size: 3em; top: 15%; left: 37.5%;} 
+    100%{position: unset; }
+}
+
+#header-img{
+    display: flex;
+    justify-content: space-between;
+
+}
+header{
+    background-image: url(../images/pexels-max-fischer-5212345.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    /* background: #FFF ; */
+
+}
+header a{
+   
+    color: #FFF;
+    text-decoration: none;
+}
+header a:hover{
+    color: black;
+    text-decoration: none;
+}
+/* .cloud{
+    position: absolute;
+    top: 50px;
+    right: -20%;
+    animation-name: cloud-animation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+
+}
+.cloud2{
+    position: absolute;
+    top: 50px;
+    right: -30%;
+    animation-name: cloud2-animation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+
+}
+.cloud3{
+    position: absolute;
+    top: 50px;
+    right: -40%;
+    animation-name: cloud3-animation;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes cloud3-animation {
+    0%{ right: -40%;}
+    100%{ right: 95%; opacity: 0;}
+  
+}
+@keyframes cloud2-animation {
+    0%{ right: -30%;}
+    100%{ right: 95%; opacity: 0;}
+  
+}
+@keyframes cloud-animation {
+    0%{  right: -20%;}
+    100%{ right: 95%; opacity: 0;}
+  
+} */
+#header-layer{
+    
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.header-caption{
+    color: white;
+    height: 50vh;
+    
+}
+
+
+/* .header-caption h1{
+    font-size: 75px;
+    font-weight: 800;
+} */
+.header-caption button{
+    font-size: 50px ;
+}
+.header-caption{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 100px; */
+}
+#register{
+    position: unset;
+    animation-name: header-register-animations;
+    animation-duration: 6s;
+}
+#logIn{
+    position: unset;
+    animation-name: header-logIn-animations;
+    animation-duration: 6s;
+}
+@keyframes header-register-animations {
+    0%{right: -100%;opacity: 0; position: absolute;}
+    25%{right: -50%; opacity: 0;  position: absolute;}
+    50%{right: -25%;opacity: 0;  position: absolute;}
+    100%{ right: 0%;  position: absolute; }
+    
+}
+@keyframes header-logIn-animations {
+    0%{left: -100%;opacity: 0; position: absolute;}
+    25%{left: -50%; opacity: 0;  position: absolute;}
+    50%{left: -25%;opacity: 0;  position: absolute;}
+    100%{ left: 0%;  position: absolute; }
+    
+}
+/* .header-caption{
+    position: absolute;
+    top:  17% ;
+    left: 14%;
+    animation-name:  header-caption-animation;
+    animation-duration: 1.5s;
+    
+    
+} */
+
+.header-details{
+    width: 100%;
+    position: unset;
+    bottom: 15%;
+    animation-name:  header-details-animation;
+    animation-duration: 3s ;
+    margin: 0px !important;
+    
+    
+}
+/* @keyframes header-caption-animation {
+    0%{left:   -40%; }
+    25%{left: -20%; opacity: 0;}
+    50%{left: -0%;opacity: 0;}
+    100%{left: 15%;}
+} */
+@keyframes header-details-animation {
+    0%{bottom: -100%;opacity: 0; position: absolute; width: 75%;}
+    25%{bottom: -62%; opacity: 0; position: absolute;width: 75%;}
+    50%{bottom: 5%;opacity: 0; position: absolute;width: 75%;}
+    100%{bottom: 15%;position: absolute;width: 75%;}
+}
+
+.header-details-description{
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+.header-details i{
+    font-size: 40px;
+    color: #ffc107;
+}
+.header-details h4{
+    font-weight: 600;
+    color: white;
+}
+#layer{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999999999999999999999999999999999;
+}
+#ParentForm{
+    width: 70%;
+    height: 610px;
+    border-radius: 5px;
+}
+#Chracter{
+    width: 150px;
+    height: 150px;
+}
+#close{
+    color: red;
+    top: 10px ;
+    right: 10px ;
+    cursor: pointer;
+}
+#parentsForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#Buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#back{
+    display: none;
+}
+.heading{
+    
+    margin: 0px !important;
+    padding: 0px !important;
+
+}
+.heading h2{
+    margin: 0px !important;
+    padding: 0px !important;
+    font-size: 4.75rem;
+    font-weight: 800;
+    color: rgba(0, 0, 0, .1);
+}
+.heading h3{
+    margin: 0px !important;
+    padding: 0px !important;
+
+
+    font-size: 2.375rem;
+    font-weight: 800;
+    bottom: 5px;
+}
+
+.line{
+    border-bottom: 1px solid black;
+    width: 40px;
+    margin:10px auto;
+    transition: all .5s ease;
+    
+}
+.caption:hover .line{
+    width: 60px;
+
+
+}
+.caption p{
+    font-size: 18px;
+}
+.about-progress  ul {
+    margin: 0%;
+    padding: 0%;
+}
+.about-progress  ul li{
+    list-style: none;
+}
+#ul{
+    margin-top: 25px;
+}
+.progress-bar{
+    background-color: #ffc107 !important;
+}
+.about-caption p{
+    margin-bottom: 5px !important;
+}
+
+.Courses{
+    background-image: url(../images/books-1281581_1920.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    color: white;
+}
+.Courses h2{
+    color: rgba(255, 193, 7,.5);
+}
+#course-line{
+    border-bottom: 1px solid #ffc107 ;
+}
+
+.course{
+    padding: 0px !important;
+    border-radius: 5px;
+    background-color: #ffc107;
+  
+    
+}
+.course h5{
+    color: black;
+    font-weight: 600;
+
+}
+.course-pic img{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    transition: all .5s ease;
+}
+.course-pic:hover img{
+    transform: scale(1.2,1.2);
+}
+#course-title{
+    top: 0px;
+    right: 50%;
+}
+
+
+.team{
+    margin-top: 50px !important;
+}
+
+.member-img{
+    border-radius: 4px ;
+
+}
+.member img{
+    border-radius: 4px ;
+    transition: all .4s;
+}
+.member h5{
+    font-weight: 600;
+    margin-top: 10px !important;
+    margin-bottom: 0px !important;
+    transition: all .4;
+}
+.layer{
+    border-radius: 4px;
+    top: 5%;
+    transition: all .4s;
+    opacity: 0;
+    justify-content: space-evenly !important;
+}
+.layer i{
+    color: #fff;
+}
+.layer:hover i{
+    cursor: pointer;
+}
+.member:hover h5{
+color: rgb(255, 193, 5);
+}
+.member:hover img{
+transform: scale(1.15,1.15);
+}
+.member:hover .layer{
+    opacity: 1;
+   background-color: rgb(255, 193, 5 , 85%);
+    top: 0px;
+
+}
+.ideas{
+    margin-top: 100px;
+}
+.ideas h3{
+    font-size: 32px;
+}
+.ideas button{
+    color: #fff !important;
+    background-color: #ffc105 !important;
+    padding: 12px 20px !important;
+}
+.btn-hover:hover{
+   background-color: rgba(252, 206, 67, 0.8) !important;
+   color: #000 !important;
+
+}
+.Site-Counter{
+    height: 50vh;
+    background-image: url(../images/jeswin-thomas-guLAk5gqj-Y-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.Counter-layer{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.counter{
+    color: ffc105;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.service-icon i{
+    font-size: 32px;
+    color: #ffc105;
+}
+.service-caption h3{
+    font-size: 18px;
+    font-weight: 700;
+    transition: all .3s;
+}
+
+.service:hover h3{
+    color: #ffc105;
+}
+#form-btn{
+    background-color: rgb(255, 193, 5) ;
+    color: #fff;
+}
+footer{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 14px;
+    background-image: url(../images/dotted-map.png);
+    background-size: cover;
+    background-position: center center;
+    background-color: #222;
+}
+footer a{
+    text-decoration: none;
+    color: #b0b0b0;
+}
+footer button{
+    color: #b0b0b0 !important;
+}
+footer p{
+    color: #b0b0b0;
+}
+.footer-border-hover{
+    font-size: 13px ;
+}
+.footer-hover:hover{
+color: #ffc105 !important;
+text-decoration: none;
+cursor: pointer;
+
+}
+.footer-border-hover:hover{
+    border-color:#ffc105 !important ;
+}
+.footer-2{
+    background-color: #1a1a1a;
+}
+.footer-2 i{
+    font-size: 16px;
+    color: white;
+}
+.copywrite{
+    color: #b0b0b0;
+}
+.footer-2 p{
+    color: white;
+}
+.arrow{
+    background: rgba(252, 206, 67, 0.8);
+    top: -25px !important ;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: all .3s;
+
+}
+.arrow i{
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+}
+.arrow:hover{
+    background: #ffc105;
+    cursor: pointer;
+
+}
+.h-144{
+    height: 144px;
+}
+.h-327{
+    height: 327px;
+}
+.Actions a{
+    text-decoration: none;
+}
+.Actions:hover a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width:1200px) {
+    .h-327{
+        height: 399px;
+    }
+
+}
+@media screen and (max-width:992px) {
+    #Youtube{
+        padding: 0px !important;
+        margin-top: 50px !important;
+    }
+    .h-327{
+        height: 327px;
+    }
+}
+@media screen and (max-width:768px) {
+    .Courses{
+        height: 220vh ;
+    }
+    .header-details{
+        position: unset;
+        width: 100%;
+        margin-top: 20px;
+        padding: 0px !important;
+    }
+    .Site-Counter{
+        height: 65vh;
+        
+    }
+    .Site-Counter2{
+        border: none !important;
+    }
+   
+}
+/* animation JQery */
+/* #About{
+    display: none;
+} */
+
+
+#About-Cap{
+    display: none ;
+}
+#About .col-lg-7{
+   opacity: 0;
+}
+#About .col-lg-5{
+   opacity: 0;
+}
+
+#Team-Cap{
+    display: none ;
+}
+#Team .col-lg-3{
+    display: none;
+}
+#Team .btn{
+display: none;
+    
+}
+#Team .col-md-5{
+    display: none;
+        
+}
+#contact-Cap{
+    display: none;
+}
+#Contact .row{
+    opacity: 0;
+
+}
+/*                                                                            Login      &     SignUp                    */
+
+.login-form{
+    box-sizing: border-box;
+    box-shadow: 5px 5px 50px -5px #000;
+    padding: 0px !important;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #FDC830,#F37335);
+   
+}
+.login-form a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-page{
+    background-image: url(../images/background.jpg);
+    margin: 0px !important;
+    padding: 0px !important;
+    box-sizing: border-box !important;
+}
+.login-page .log-In-action{
+    background-image: linear-gradient(to right, #FDC830,#F37335);
+}
+.login-page .Register-action{
+background-image: url(../images/background.jpg);
+background-size: cover;
+background-position: center center;
+}
+
+.SignUp-page{
+    background-image: url(../images/background.jpg);
+    margin: 0px !important;
+    padding: 0px !important;
+    box-sizing: border-box !important;
+}
+.SignUp-page .log-In-action{
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.SignUp-page .Register-action{
+    background-image: linear-gradient(to right, #FDC830,#F37335);
+}
+.log-In-action{
+    border-top-left-radius: 5px ;
+}
+.log-In-action:hover{
+    cursor: pointer;
+}
+.Register-action{
+    border-top-right-radius: 5px ;
+}
+.Register-action:hover{
+    cursor: pointer;
+}
+
+.pages-Logo a{
+text-decoration: none;
+}
+.pages-Logo:hover a{
+    text-decoration: none;
+    }
+    #addOtherParent{
+        position: absolute;
+        right: 0px;
+        bottom: 7.5%;
+    }
+/* .skill{
+    border: 3px solid #007bff  !important;
+}
+.skill:hover{
+    background-color: #007bff;
+    cursor: pointer;
+}
+.skill:hover input{
+    cursor: pointer;
+} */
+
+
+/*                                                                    user page                                       */
+#userPage{
+    margin: 0px !important;
+    padding: 0px !important;
+    box-sizing: border-box !important;
+    background-color: #edeae3 ;
+   
+}
+.user-layer{
+    position: absolute;
+    
+    z-index: 99;
+    
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+   
+}
+
+.circle{
+    opacity: 1;
+    position: absolute;
+    z-index: 0;
+    border-radius: 100%;
+    background-color: teal;
+    width: 200px;
+    height: 200px;
+    top: 100px;
+    left: 500;
+    animation-name: circle-animation;
+    animation-duration: 7s;
+}
+
+
+@keyframes circle-animation {
+    0%{opacity: 1;width: 200px;height: 190px;}
+    50%{opacity: 1;display: block;width: 180px;height: 200px;}
+    100%{opacity: 0;display: block;width: 200px;height: 200px;}
+
+}
+.skitter {
+    max-width: initial;
+    display: none;
+}
+.user-toggle{
+      opacity: 0;
+}
+.userpicRetrive{
+    
+    background: #edeae3;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.userpicRetrive img{
+    border-radius:50% ;
+}
+.user-skills-actvities-entertainment-design h6:hover{
+    color: #ffc105 !important;
+}
+.user-skills-actvities-entertainment-design li:hover{
+    color: #ffc105;
+}
